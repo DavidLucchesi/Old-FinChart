@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>5-Dimension Data</title>
+	<!--<link rel="icon" href="../img/logo.png" type="image/png">
+	<link href="../css/5D.css" rel="stylesheet">-->
+</head>
+<body>
+	<table border="1" id="datatable" style="margin:auto;">
+		<thead>
+			<tr>
+				<th><h2>Continent</h2></th>
+				<th><h3>Secteur</h3></th>
+				<th>Pondération</th>
+				<th>Performance</th>
+				<th>Trackers</th>
+			</tr>
+		</thead>
+		<tbody  id="data">
+		</tbody>
+	</table>
+	<div style="text-align: center">
+		<br>
+		<button id="addContinent"> Ajouter un continent </button>  <button id="tablebutton"> Créer </button><br><br>
+		<hr>
+	</div>
+
+
+	<div style="text-align: center;display:none">
+		<label for="initial">Données au format JSON :</label><br>
+		<input name="InitialValue" id="initial" type="text" /><br><br>
+		<button id="button"> Créer </button><br><br>
+		<hr>
+	</div>
+
+	<canvas id="canvas" width="600" height="600" style="margin:auto;padding:0;display:block">
+	</canvas>
+
+	<table border="1" id ="resulttable" style="margin:auto;display:none">
+		<thead>
+			<tr>
+				<th><h2>Continent</h2></th>
+				<th><h3>Secteur</h3></th>
+				<th>Pondération</th>
+				<th>Performance</th>
+				<th>Trackers</th>
+			</tr>
+		</thead>
+		<tbody  id="table">
+		</tbody>
+	</table>
+
+	<script src="../js/5D.js"></script>
+</body>
+</html>
